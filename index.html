@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generator Barcode & QR</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+</head>
+<body>
+  <header class="container">
+    <h1>Generator Barcode & QR</h1>
+    <nav class="nav">
+      <a href="profile.html">Buat Foto Profil</a>
+      <a href="scan.html">Scan Kode</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="panel">
+      <div class="form-grid">
+        <label>
+          Teks atau Link
+          <input id="payload" type="text" placeholder="Masukkan teks atau URL">
+        </label>
+        <label>
+          Tipe
+          <select id="type">
+            <option value="barcode">Barcode (Code128)</option>
+            <option value="qr">QR Code</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button id="generate">Generate</button>
+        <button id="download" class="secondary">Unduh PNG</button>
+      </div>
+      <div class="output-wrap">
+        <canvas id="outputCanvas" width="1024" height="512"></canvas>
+      </div>
+    </section>
+  </main>
+  <footer class="container foot">
+    <span>© Generator Kode</span>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+<style>
+</style>
+

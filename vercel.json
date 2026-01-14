@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "cleanUrls": true,
@@ -15,3 +16,14 @@
     { "source": "/scan", "destination": "/scan.html" }
   ]
 }
+=======
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/profile", "destination": "/profile.html" },
+    { "source": "/scan", "destination": "/scan.html" }
+  ]
+}
+>>>>>>> 28c4d810d82ba06eac4c78529f25dd4e227aa27e
